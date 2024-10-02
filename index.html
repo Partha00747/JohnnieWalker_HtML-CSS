@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIAGEO</title>
+    <link rel="stylesheet" href="style.css">
+     </head>
+<body>
+     <style>
+        body{
+            background-color: #000000;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #ffffff 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #ffffff 100px 101px,
+                linear-gradient(to right, #CDCDCDcc, #CDCDCDcc)
+            );
+    
+            
+        }
+        .scotch-header {
+            display: block; 
+            padding: 87px 10px; 
+            border: 15px solid #f0c14b; 
+            text-decoration: none; 
+            color: #ff0000; 
+            background-color: #ffffff;
+            border-radius: 150px;     
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 0px;
+            margin-bottom: 100px;
+          
+        }
+
+        .scotch-header h1 {
+            font-family: fantasy;
+            font-size: 3.5em;
+            color: #000000;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+                      
+        }
+
+        .scotch-section {
+            margin-top: 150px; 
+            padding: 0px; 
+        }
+        
+        .scotch-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+            color: #ffffff; 
+        }
+        
+        .scotch-item img {
+            width: 600px;
+            height: 500px;
+            border-radius: 1px;
+            margin-right: 3px; 
+        }
+
+        .scotch-description h3 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;            ;
+            font-size: 3em;
+            color: #f0c14b;
+            margin-bottom: 50px;
+        }
+        .scotch-description h5 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;            ;
+            font-size: 2.2em;
+            color: #fc0000;
+            margin-bottom: 40px;
+            margin-top: -45px;
+        }
+
+        .scotch-description p {
+            padding: auto;
+            font-size: 1em;
+            font-family: cursive;
+            color: #ffffff;
+        }
+        .scotch-item ul {
+            list-style: none;
+            max-width: 900px;
+          }
+        .scotch-item li {
+            position: relative;
+            margin-bottom: 2rem;
+            margin-left: -2.5rem;
+            padding-left: 1rem;
+            color: white;
+          }
+          
+          .scotch-item li::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 6px;
+            height: 15px;
+            width: 3px;
+            background-color: rgb(255, 0, 0);
+          }
+
+        @media screen and (max-width: 767px) {
+            .scotch-header h1 {
+                font-size: 1.5em;
+            }
+            
+            .scotch-item {
+                flex-direction: column;
+                text-align: center;
+            }
+        
+            .scotch-item img {
+                margin-bottom: 20px;
+                margin-right: 0;
+                width: 70px;
+            }
+        }
+    
+    </style> 
+    <link rel="stylesheet" href="style.css">
+    <div class="banner-header">
+    <nav>
+        <div class="nav__logo">
+          <img src="images\brand.png" alt="logo" />
+        </div>
+        
+        <ul class="nav-links">
+          <li class="link"><a href="#">home</a></li>
+          <li class="link"><a href="#">Our Heritage</a></li>
+          <li class="link"><a href="#">Whisky Collection</a></li>
+          <li class="link"><a href="#">Cocktail Recipes</a></li>
+          <li class="link"><a href="#">ABOUT US</a></li>
+          <li class="link"><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="images\jw1.png" alt=""></div>
+            <div class="item" style="--position: 2"><img src="images\jw2.png" alt=""></div>
+            <div class="item" style="--position: 3"><img src="images\jw3.png" alt=""></div>
+            <div class="item" style="--position: 4"><img src="images\jw4.png" alt=""></div>
+            <div class="item" style="--position: 5"><img src="images\jw5.png" alt=""></div>
+            <div class="item" style="--position: 6"><img src="images\jw6.png" alt=""></div>
+            <div class="item" style="--position: 7"><img src="images\jw7.png" alt=""></div>
+            <div class="item" style="--position: 8"><img src="images\jw8.png" alt=""></div>
+            <div class="item" style="--position: 9"><img src="images\jw9.png" alt=""></div>
+            <div class="item" style="--position: 10"><img src="images\jw10.png" alt=""></div>
+        </div>
+        <div class="content">
+            <h1 data-content="JOHNNIE WALKER">
+                JOHNNIE WALKER
+            
+            <div class="model"></div>
+        </div>
+    </div>
+    <section class="feature">
+        <div class="section__container feature__container">
+          <div class="feature__image">
+            <img src="images\lol.jpg" alt="feature" />
+          </div>
+          <div class="feature__content">
+            <h2 class="section__header">OUR HISTORY</h2>
+            <ul>
+              <li>
+                Enjoyed and embraced in over 180 countries, Johnnie Walker energises the pursuit of your richest life.              </li>
+              <li>Johnnie Walker was born from experimentation. Our founder John Walker pushed the boundaries of what whisky could be. Not satisfied with the harsh, inconsistent scotch of his day.</li>
+              <li>He blended together different single malts to create consistent, complex and flavourful whiskies with the result that today every bottle masterfully blends the finest and rarest whiskies from the four corners of Scotland.</li>
+              <li> The unique blend has reached every part of the world, making Johnnie Walker the first-ever truly global brand.</li>
+              <li>First created in 1908, the Striding Man has become one of the world's most recognised brand icons and is symbolic of progress for all those who enjoy Johnnie Walker.</li>
+              <li>Diageo India is among the country’s leading beverage alcohol companies with an outstanding collection of premium brands.</li>
+              <li>Diageo is the mother company of Johnnie Walker.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <header>
+        
+    <div class="banner">
+        <div class="product">
+            <div class="soda" style="--url: url(images/lgo.jpg)">
+            </div>
+            <div class="soda" style="--url: url(images/lgo2.jpg)">
+            </div>
+        </div>
+
+
+        <div class="rock">
+            <img src="images/rock1.png" alt="">
+            <img src="images/rock2.png" alt="">
+            <img src="images/rock3.png" alt="">
+        </div>
+    </div>
+    <section class="scotch-section">
+        <header class="scotch-header">
+            <h1> "Keep Walking".."Just Keep Walking" </h1>
+            
+        </header>
+        </div>
+        <div class="scotch-item">
+            <img src="images\three.png" alt="Johnnie Walker">
+            <div class="scotch-description">
+                <h3>Blue Label Blended Scotch Whisky 1L (Rare & Exclusive)</h3>
+                <ul>
+                   
+                    <li>
+                        <p>Johnnie Walker Blue Label comes from hand-selecting rare Scotch Whiskies with a remarkable depth of flavor.</p>
+                    </li>
+                    <li>
+                        <p>Only one in 10,000 casks make the cut.</p>
+                    </li>
+                    <li>
+                        <p>Best served neat, along with an ice-cold water to enhance its powerful character.</p>
+                    </li>
+                    <li>
+                        <p>Discover-the-Rarity</p>
+                    </li>
+                    <li>
+                        <p>Price-<br> 30,390/- </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+        <button>Add To Cart</button>
+        <section>
+        <div class="scotch-item">
+            <img src="images\four.png" alt="Johnnie Walker ">
+            <div class="scotch-description">
+                <h3>Island Green Blended Scotch Whisky 1L</h3>
+                <ul>
+                    <li>
+                        <p>Johnnie Walker Green Label Considered by whisky experts and bartenders as the ‘hidden gem’ in the world of Scotch Whisky.</p>
+                    </li>
+                    <li>
+                        <p>70cl 43% Overview One with nature Made entirely with Single Malts from the four corners of Scotland.</p>
+                    </li>
+                    <li>
+                        <p>Johnnie Walker Green Label aged for at least 15 years, this blended Scotch Whisky captures the distinct flavours of each landscape in perfect balance.</p>
+                    </li>
+                    <li>
+                        <p>Discover-the-Intensity</p>
+                    </li>
+                    <li>
+                        <p>Price-<br> 7,990/- </p>
+                    </li>
+                </ul>            
+            </div>
+        </div>
+    </section>
+        <button>Add To Cart</button>
+    <section>
+    <div class="scotch-item">
+            <img src="images\two.png" alt="Johnnie Walker">
+            <div class="scotch-description">
+                <h3>Gold Label Reserve Blended Scotch Whisky 1L (Pure Indulgence)</h3>
+                <ul>
+                    <li>
+                        <p>Johnnie Walker Gold Label Reserve is a Gold Medal award-winning blend created by Master Blender Jim Beveridge to celebrate nearly 200 years of the art of blending.</p>
+                    </li>
+                    <li>
+                        <p>Gold Label Reserve is the art of blending and is a luxurious and smooth whisky, with notes of vanilla and dark fruit.</p>
+                    </li>
+                    <li>
+                        <p>A wonderful tribute to the harmonious partnership of Speyside and Highland whiskies, with just a hint of smouldering embers from the West Coast.</p>
+                    </li>
+                    <li>
+                        <p>Discover-the-Luxary</p>
+                    </li>
+                    <li>
+                        <p>Price-<br> 8,290/- </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+        <button>Add To Cart</button>
+    <section>
+        <div class="scotch-item">
+            <img src="images\five.png" alt="Johnnie Walker ">
+            <div class="scotch-description">
+                <h3>18 Year Old Platinum Label Whisky 70cl <h5>(Rare Edition)</h5></h3>
+                <ul>
+                    <li>
+                        <p>Johnnie Walker Platinum used to sit between Gold and Blue in the extensive range of blends, carrying an impressive 18-year-old age statement.This is this is quite different from the gold label.</p>
+                    </li>
+                    <li>
+                        <p>Nose : Sweet rich and deep notes with maraschino cherries, toffee caramel, vanilla, baked rhubarb crumble and a very thin whiff of smoke.</p>
+                    </li>
+                    <li>
+                        <p>Palate: The richness continues onto the palate, which is sweet and warming, with creamy malt, oats and cereal. A spicy vanilla cinnamon dusting too with the gentle smoke again developing.</p>
+                    </li>
+                    <li>
+                        <p>Finish: Dark chocolate with caramalised peel.</p>
+                    </li>
+                    <li>
+                        <p>Price-<br> 9,081/- (750ml)</p>
+                    </li>
+                </ul>            
+            </div>
+        </div>
+    </section>
+        <button>Add To Cart</button>
+    <section>
+        <div class="scotch-item">
+            <img src="images\six.png" alt="Johnnie Walker ">
+            <div class="scotch-description">
+                <h3>Johnnie Walker White Walker Game Of Thrones 750ml<h5>(Limited Edition)</h5></h3>
+                <ul>
+                    <li>
+                        <p>A brand-new, limited-edition blend from Johnnie Walker inspired by Game of Thrones, this is a light and fruity whisky designed to be sipped straight from the freezer and allowed to develop as it warms.</p>
+                    </li>
+                    <li>
+                        <p>Created by whiskey specialist George Harper, alongside the small team of expert blenders at Johnnie Walker, this innovative whiskey is best served directly from the freezer, echoing the chilling presence of the White Walkers.</p>
+                    </li>
+                    <li>
+                        <p>The Scotch has notes of caramelized sugar and vanilla, fresh red berries with a touch of orchard fruit, and features Single Malts from Cardhu and Clynelish - one of Scotland's most Northern distilleries.</p>
+                    </li>
+                    <li>
+                        <p>Price-<br> 11,775/- (Excluding GST & Tax)</p>
+                    </li>
+                </ul>            
+            </div>
+        </div>
+    </section>
+        <button>Add To Cart</button>
+    <section>
+        <div class="scotch-item">
+            <img src="images\seven.png" alt="Johnnie Walker">
+            <div class="scotch-description">
+                <h3>Johnnie Walker A Song of Fire Game of Thrones
+                    70cl | 40.8%<h5>(Limited Edition)</h5></h3>
+                <ul>
+                    <li>
+                        <p>Johnnie Walker is calling on Game of Thrones fans to declare their allegiance, Stark or Targaryen, Direwolf or Dragon. Wheter it's fire you desire or you have ice in your veins, Johnnie Walker has a Game of Thrones whisky for you.</p>
+                    </li>
+                    <li>
+                        <p>Nose: Caramel, honey, vanilla, toasted oak, dark fruit, citrus, baking spice.</p>
+                    </li>
+                    <li>
+                        <p>Finish: Medium finish that leaves you with an oily mouthfeel full of spice, pepper, caramel, and toasted oak with a big of peat and smoke.</p>
+                    </li>
+                    <li>
+                        <p>Price-<br> 9,700/- (Excluding GST & Tax) </p>
+                    </li>
+                </ul>           
+            </div>
+        </div>
+    </section>
+        <button>Add To Cart</button>
+    <section>
+        <div class="scotch-item">
+            <img src="images\eight.png" alt="Johnnie Walker">
+            <div class="scotch-description">
+                <h3>Johnnie Walker A Song of Ice Game of Thrones
+                    70cl | 40.8%<h5>(Limited Edition)</h5></h3>
+                <ul>
+                    <li>
+                        <p>Johnnie Walker A Song of Ice is a limited-edition blended Scotch whisky that was released as part of the Game of Thrones series by Diageo.</p>
+                    </li>
+                    <li>
+                        <p> This particular expression takes its inspiration from House Targaryen, one of the powerful families in the Game of Thrones series, known for its dragons.</p>
+                    </li>
+                    <li>
+                        <p>The blend features malt from the Caol Ila distillery, renowned for its peated profile, which lends subtle smokiness to the whisky.</p>
+                    </li>
+                    <li>
+                        <p>Price-<br>9,700/- (Excluding GST & Tax) </p>
+                    </li>
+                </ul>            
+            </div>
+        </div>
+    </section>
+        <button>Add To Cart</button>
+    <section>
+        <div class="scotch-item">
+            <img src="images\nine.png" alt="Johnnie Walker ">
+            <div class="scotch-description">
+                <h3>Black Label Aged 12 YO Blended Scotch Whisky (Hidden Depths)</h3>
+                <ul>
+                    <li>
+                        <p>Johnnie Walker Black Label is a benchmark in blending excellence. Perfectly balanced whisky that brings together rich flavours to create an experience that is deep and rewarding.</p>
+                    </li>
+                    <li>
+                        <p>Black Label is crafted by a small team of expert whisky-makers using more than 30 of the finest single malt and grain whiskies from the four corners of Scotland, each one matured for at least 12 years.</p>
+                    </li>
+                    <li>
+                        <p>Nose: Take in the luxurious scent of rich and tropical dark fruits with hints of sweet vanilla.</p>
+                    </li>
+                    <li>
+                        <p>Palate: Savour the depth of flavour developed from maturation in oak casks, combined with creamy toffee notes that come from grain whiskies.</p>
+                    </li>
+                    <li>
+                        <p>Discover--Complexity</p>
+                    </li>
+                    <li>
+                        <p>Price-<br> 4,500/- (750ml) </p>
+                    </li>
+                </ul>            
+            </div>
+        </div>
+    </section>
+        <button>Add To Cart</button>
+    <section>
+        <div class="scotch-item">
+            <img src="images/one.png" alt="Johnnie Walker">
+            <div class="scotch-description">
+                <h3>Red Label Blended Scotch Whisky (Full Of Character)</h3>
+                <ul>
+                    <li>
+                        <p>Red Label Johnnie Walker is a mix of single malt and single grain whiskeys from across Scotland that’s at least 3 years old.</p>
+                    </li>
+                    <li>
+                        <p>Flowers that bloom into flames. Johnnie Walker Red Label is the world’s best-selling Scotch Whisky. And is made for mixing, both in exhilarating cocktails and with your favorite people. It brings together whiskies specially chosen for their bold, vibrant flavors that add a fiery kick to any mix.</p>
+                    </li>
+                    <li>
+                        <p>Palate: Light green apples, fruity honey, and nuts (albeit slightly muted). It then develops into ripe pears and salty smoke before spicy dry oak and milk chocolate.</p>
+                    </li>
+                    <li>
+                        <p>Finish: An extinguished fire with island smoke and salt.</p>
+                    </li>
+                    <li>
+                        <p>Discover--Versatility</p>
+                    </li>
+                    <li>
+                        <p>Price-<br> 2,890/- (1L) </p>
+                    </li>
+                </ul>            
+            </div>
+        </div>
+    </section>
+        <button>Add To Cart</button>
+        <section>
+        <div class="scotch-item">
+            <img src="images\ten.jpg" alt="Johnnie Walker">
+            <div class="scotch-description">
+                <h3>Johnnie Walker Johnnie Blonde Whisky 70cl | 40%</h3>
+                <ul>
+                    <li>
+                        <p>Joining the core range from Johnnie Walker comes Johnnie Blonde, a bright and fruity blend of wheat and malt whisky, ideal for topping up.</p>
+                    </li>
+                    <li>
+                        <p>The sweet character should appeal to even the lesser keen whisky drinkers out there – a great bottle to take to the party, or mix with lemonade for some refreshing long drinks to relax with!</p>
+                    </li>
+                    <li>
+                        <p>Nose: Fresh, ripe berries, silky vanilla, soft malt, and toffee.</p>
+                    </li>
+                    <li>
+                        <p>Palate: Toffee apple, more vanilla sweetness, buttery popcorn, and chewy caramels.</p>
+                    </li>
+                    <li>
+                        <p>Finish: Soft, light citrus, apple pastry with a dusting of icing sugar.</p>
+                    </li>
+                    <li>
+                        <p>Price-<br> 3,800/- (1L)</p>
+                    </li>
+                </ul>            
+            </div>
+            
+       
+    </section>
+    <button>Add To Cart</button>
+    <footer class="footer">
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <img src="images/ftr.jpg" alt="footer logo" />
+          </div>
+          <div class="footer__col">
+            <ul>
+              <li>VIEW YOUR CART</li>
+              <li>OFFERS</li>
+              <li>FOLLOW US</li>
+              <li>SHOP LOCATION IN YOUR AREA</li>
+              <li>CONTACT US</li>
+            </ul>
+          </div>
+          
+          <div class="footer__col">
+            <h4>GET IN TOUCH !</h4>
+            <input type="text" placeholder="EMAIL" />
+            <p>DESIGNED BY <br>PARTHA CHAKRABORTY :)</p>
+          </div>
+        </div>
+      </footer> 
+</body>
+</html>
